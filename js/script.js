@@ -3,16 +3,15 @@ let player1 = prompt("Як буде називатися перший ігрок
 let player2 = prompt("Як буде називатися другий ігрок? -: ");
 document.querySelector(".header_col1-name").innerHTML = player1;
 document.querySelector(".header_col2-name").innerHTML = player2;
-const scores = [0, 0];
 let curentPlayer = 1;
 
 //player One
-const score1 = document.querySelector(".header_col1-score");
-const score2 = document.querySelector(".header_col2-score");
+let score1 = document.querySelector(".header_col1-score");
+let score2 = document.querySelector(".header_col2-score");
 
 //player Two
-const curentScore1 = document.querySelector(".header_col1_curent-score");
-const curentScore2 = document.querySelector(".header_col2_curent-score");
+let curentScore1 = document.querySelector(".header_col1_curent-score");
+let curentScore2 = document.querySelector(".header_col2_curent-score");
 let curentScore2Change = 0,
   curentScore1Change = 0,
   finallyScore1 = 0,
@@ -129,11 +128,13 @@ againBtn.addEventListener("click", function () {
   diceBtn.classList.remove("disabled");
   document.querySelector(".win_player1").innerHTML = "";
   document.querySelector(".win_player2").innerHTML = "";
-  score1.value = 0;
-  score2.value = 0;
-  curentScore1.value = 0;
-  curentScore2.value = 0;
-  curentScore1Change.value = 0;
-  curentScore2Change.value = 0;
+  finallyScore1 = 0;
+  finallyScore2 = 0;
+  score1.textContent = 0;
+  score2.textContent = 0;
+  curentScore1.textContent = 0;
+  curentScore2.textContent = 0;
+  curentScore1Change.textContent = 0;
+  curentScore2Change.textContent = 0;
   curentPlayer = 1;
 });
