@@ -1,0 +1,33 @@
+{
+  "name": "pig-game",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalik203/Pig-game.git"
+  },
+  "author": "vitalik_203",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalik203/Pig-game/issues"
+  },
+  "homepage": "https://github.com/vitalik203/Pig-game#readme",
+  "release-it": {
+    "github": {
+      "release": true
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "release-it": "^17.2.0"
+  },
+  "dependencies": {
+    "@release-it/conventional-changelog": "^8.0.1"
+  }
+}
