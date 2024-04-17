@@ -19,7 +19,8 @@
   "homepage": "https://github.com/vitalik203/Pig-game#readme",
   "release-it": {
     "github": {
-      "release": true
+      "release": true,
+      "releaseName": "v${version}"
     }
   },
   "devDependencies": {
